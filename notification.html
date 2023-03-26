@@ -1,0 +1,31 @@
+<html><body>
+    <h1>Notification has been started</h1>
+
+<script>
+    function showNotifiacation(){
+        const notification = new Notificatin("new word",{
+            body:"meaning of this word is this"
+           
+
+        });
+
+        notificatin.onclick = (e)=>{
+            window.location.href =""
+        };
+
+    }
+    console.log(Notification.permission);
+
+    if (Notification.permession == "granted"){
+        showNotifiacation();
+
+    }else if (Notification.permission !=="denied"){
+        Notification.requestPermission().then(permession =>{
+            if(permession === "granted"){
+                showNotifiacation();
+            }
+        });
+
+    }
+</script>
+</body></html>
