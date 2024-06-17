@@ -1,1 +1,1 @@
-# flask-
+# Notification generating website using Flask
